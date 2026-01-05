@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!--
+    index.html
+    ----------
+    Home page
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Battlefield Press Demo - Home</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Battlefield Press Demo Website</span>
+      </a>
+
+      <nav aria-label="Primary navigation" class="nav-links">
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <!-- Dropdown -->
+        <label class="sr-only" for="quickJump">Quick navigation</label>
+        <select id="quickJump" class="nav-select">
+          <option value="">Jump to…</option>
+          <option value="about.html">About</option>
+          <option value="gallery.html">Gallery</option>
+          <option value="contact.html">Contact</option>
+        </select>
+
+        <!-- Button link -->
+        <a class="btn primary" href="https://en.wikipedia.org/wiki/Web_development" target="_blank" rel="noopener noreferrer">
+          Example FTP Button ↗
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            This is just a demo!
+          </div>
+
+          <h1>This demo website has some functionality.</h1>
+          <p class="subhead">
+            About + Gallery (search/filter/sort) + Contact.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="gallery.html">Explore the gallery</a>
+            <a class="btn" href="about.html">About</a>
+          </div>
+        </div>
+
+        <div class="hero-photo" aria-label="Studio photo placeholder">
+          <img
+            alt="Workshop placeholder"
+            src="https://images.unsplash.com/photo-1631270314738-e6f6827f8d9f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          />
+          <div class="photo-caption">
+            <div class="cap">This website should have of the functionality that was discussed with Elise.</div>
+            <div class="pill">Placeholder image!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="panel">
+          <h2 class="section-title">What this template includes</h2>
+          <p class="section-lead">
+            Swap content + images and you’ve got a polished studio/portfolio site.
+          </p>
+          <ul class="list">
+            <li>Multi-page nav (no one-page app)</li>
+            <li>Dropdown(s) (header + gallery filters)</li>
+            <li>External link button (placeholder)</li>
+            <li>Gallery with Search + Filter + Sort</li>
+          </ul>
+          <div class="spacer"></div>
+          <a class="btn" href="about.html">See About page</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <div>
+        <div class="foot-brand">
+          <span class="logo small" aria-hidden="true"></span>
+          <strong>Battlefield Press Demo Website</strong>
+        </div>
+        <div>© <span data-year></span> Liam Wheaton. All rights reserved.</div>
+      </div>
+
+      <div class="foot-links">
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared JS (nav dropdown + footer year) -->
+  <script src="assets/main.js"></script>
+</body>
+</html>

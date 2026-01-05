@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!--
+    gallery.html
+    -----------
+    Gallery page:
+    - Search by title (client-side)
+    - Filter by category (dropdown)
+    - Sort results (dropdown)
+    - Renders cards from data in assets/gallery.js
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Battlefield Press Demo Website - Gallery</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Battlefield Press Demo Website</span>
+      </a>
+
+      <nav aria-label="Primary navigation" class="nav-links">
+        <a href="about.html">About</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <label class="sr-only" for="quickJump">Quick navigation</label>
+        <select id="quickJump" class="nav-select">
+          <option value="">Jump to…</option>
+          <option value="index.html">Home</option>
+          <option value="about.html">About</option>
+          <option value="contact.html">Contact</option>
+        </select>
+
+        <a class="btn primary" href="https://en.wikipedia.org/wiki/Web_development" target="_blank" rel="noopener noreferrer">
+          Example FTP Button ↗
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="kicker"><span class="dot" aria-hidden="true"></span> Gallery</div>
+        <h1 class="page-title">Searchable, sortable, gallery.</h1>
+        <p class="page-subhead">
+          Search by title, filter by category, and sort results. All placeholder images.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="toolbar" role="group" aria-label="Gallery controls">
+          <div class="tools-left">
+            <label class="sr-only" for="searchInput">Search by title</label>
+            <input
+              id="searchInput"
+              class="input"
+              type="search"
+              placeholder="Search titles (e.g., “Foil”, “Minimal”, “Packaging”)…"
+            />
+
+            <!-- Dropdown -->
+            <label class="sr-only" for="categorySelect">Filter by category</label>
+            <select id="categorySelect" class="select">
+              <option value="all">All categories</option>
+              <option value="Brand">Brand</option>
+              <option value="Stationery">Stationery</option>
+              <option value="Packaging">Packaging</option>
+              <option value="Editorial">Editorial</option>
+            </select>
+
+            <label class="sr-only" for="sortSelect">Sort gallery</label>
+            <select id="sortSelect" class="select">
+              <option value="newest">Sort: Newest</option>
+              <option value="oldest">Sort: Oldest</option>
+              <option value="title-asc">Sort: Title A → Z</option>
+              <option value="title-desc">Sort: Title Z → A</option>
+            </select>
+          </div>
+
+          <div class="tools-right">
+            <a class="btn" href="https://en.wikipedia.org/wiki/Web_development" target="_blank" rel="noopener noreferrer">External Link ↗</a>
+          </div>
+        </div>
+
+        <!-- Render target: gallery.js will fill this grid -->
+        <div id="galleryGrid" class="grid" aria-live="polite"></div>
+        <div id="emptyState" class="empty">No results. Try a different search term or category.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <div>
+        <div class="foot-brand">
+          <span class="logo small" aria-hidden="true"></span>
+          <strong>Battlefield Press Demo Website</strong>
+        </div>
+        <div>© <span data-year></span> Liam Wheaton. All rights reserved.</div>
+      </div>
+
+      <div class="foot-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+  <script src="assets/gallery.js"></script>
+</body>
+</html>

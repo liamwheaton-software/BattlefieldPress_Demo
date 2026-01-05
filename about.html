@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!--
+    about.html
+    ----------
+    About page.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Battlefield Press Demo Website - About</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Battlefield Press Demo Website</span>
+      </a>
+
+      <nav aria-label="Primary navigation" class="nav-links">
+        <a class="active" href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <label class="sr-only" for="quickJump">Quick navigation</label>
+        <select id="quickJump" class="nav-select">
+          <option value="">Jump to…</option>
+          <option value="index.html">Home</option>
+          <option value="gallery.html">Gallery</option>
+          <option value="contact.html">Contact</option>
+        </select>
+
+        <a class="btn primary" href="https://en.wikipedia.org/wiki/Web_development" target="_blank" rel="noopener noreferrer">
+          Example FTP Button ↗
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="kicker"><span class="dot" aria-hidden="true"></span>About</div>
+        <h1 class="page-title">An about page, this could contain any info in it.</h1>
+        <p class="page-subhead">
+          Can be replaced with real company information!
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="panel">
+          <h2 class="section-title">About Us</h2>
+          <p class="muted">
+            The Battlefield Press Demo website wasn't difficult to make, nor was it tough to host compared to some more complicated websites built with other frameworks.
+          </p>
+
+          <div class="facts">
+            <div class="fact"><b>Founded</b><span>2026 (placeholder)</span></div>
+            <div class="fact"><b>Based in</b><span>Hamilton, ON (placeholder)</span></div>
+            <div class="fact"><b>Specialties</b><span>Tons of specialties (placeholder)</span></div>
+            <div class="fact"><b>Idea</b><span>Lots of ideas (placeholder)</span></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="image-frame">
+            <img
+              alt="Gallery Image"
+              src="https://images.unsplash.com/photo-1606819717115-9159c900370b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+          </div>
+
+          <div class="spacer"></div>
+
+          <h3 class="mini-title">There is a gallery!</h3>
+          <ul class="list">
+            <li>It's got placeholder images</li>
+            <li>Searching</li>
+            <li>Even sorting</li>
+          </ul>
+
+          <div class="spacer"></div>
+          <a class="btn" href="gallery.html">Browse the Gallery</a>
+        </div>
+      </div>
+    </section>
+    </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <div>
+        <div class="foot-brand">
+          <span class="logo small" aria-hidden="true"></span>
+          <strong>Battlefield Press Demo Website</strong>
+        </div>
+        <div>© <span data-year></span> Liam Wheaton. All rights reserved.</div>
+      </div>
+
+      <div class="foot-links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

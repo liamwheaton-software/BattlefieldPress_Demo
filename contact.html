@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!--
+    contact.html
+    -----------
+    A simple contact page.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Battlefield Press Demo Website — Contact</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Battlefield Press Demo Website</span>
+      </a>
+
+      <nav aria-label="Primary navigation" class="nav-links">
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <label class="sr-only" for="quickJump">Quick navigation</label>
+        <select id="quickJump" class="nav-select">
+          <option value="">Jump to…</option>
+          <option value="index.html">Home</option>
+          <option value="about.html">About</option>
+          <option value="gallery.html">Gallery</option>
+        </select>
+
+        <a class="btn primary" href="https://en.wikipedia.org/wiki/Web_development" target="_blank" rel="noopener noreferrer">
+          Example FTP Button ↗
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="kicker"><span class="dot" aria-hidden="true"></span> Contact</div>
+        <h1 class="page-title">Say hello with the links below.</h1>
+        <p class="page-subhead">Placeholders used for links/contact info.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="panel">
+          <h2 class="section-title">Email</h2>
+          <p class="muted">Best way to reach us for quotes and timelines.</p>
+          <div class="spacer"></div>
+          <a class="btn" href="mailto:hello@example.example">hello@example.example</a>
+        </div>
+
+        <div class="panel">
+          <h2 class="section-title">Links</h2>
+          <p class="muted">Fake links!</p>
+          <div class="spacer"></div>
+          <div class="stack">
+            <a class="btn" href="https://en.wikipedia.org/wiki/Web_development" target="_blank" rel="noopener noreferrer">Example Link 1 ↗</a>
+            <a class="btn" href="https://en.wikipedia.org/wiki/Web_development" target="_blank" rel="noopener noreferrer">Example Link 2 ↗</a>
+            <a class="btn" href="https://en.wikipedia.org/wiki/Web_development" target="_blank" rel="noopener noreferrer">Example Link 3 ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <div>
+        <div class="foot-brand">
+          <span class="logo small" aria-hidden="true"></span>
+          <strong>Battlefield Press Demo Website</strong>
+        </div>
+        <div>© <span data-year></span> Studio North. All rights reserved.</div>
+      </div>
+
+      <div class="foot-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
